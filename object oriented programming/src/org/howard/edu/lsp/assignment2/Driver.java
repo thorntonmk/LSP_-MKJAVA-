@@ -19,3 +19,18 @@ public class Driver {
 					if (word.length() <= 3) {
 						continue;
 					}
+					if (!wordCounts.containsKey(word)) {
+						wordCounts.put(word, 0);
+					}
+					wordCounts.put(word, wordCounts.get(word) + 1);
+				}
+			}
+			for (Map.Entry<String, Integer> entry : wordCounts.entrySet()) {
+				System.out.println(entry.getKey() + ": " + entry.getValue());
+			}
+		} catch (IOException e) {
+			System.out.println("Unable to open file: " + filePath);
+			e.printStackTrace();
+		}
+	}
+}
