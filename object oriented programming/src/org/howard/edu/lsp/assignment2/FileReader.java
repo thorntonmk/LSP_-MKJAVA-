@@ -10,3 +10,13 @@ public class FileReader {
 		URL url = getClass().getClassLoader().getResource(resources);
 		
 		System.out.println(url.getPath());
+		
+		if (url != null) {
+			File file = new File(url.getPath());
+			
+			Scanner sc = null;
+			try {
+				sc = new Scanner(file);
+				String output = "";
+				while (sc.hasNextLine()) {
+					output = output + sc.nextLine() + " ";
