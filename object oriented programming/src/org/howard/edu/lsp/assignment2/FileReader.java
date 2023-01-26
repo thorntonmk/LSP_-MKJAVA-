@@ -20,3 +20,12 @@ public class FileReader {
 				String output = "";
 				while (sc.hasNextLine()) {
 					output = output + sc.nextLine() + " ";
+				}
+				return output.trim();
+			} finally {
+				sc.close();
+			}
+		}
+		return "";
+	}
+}
