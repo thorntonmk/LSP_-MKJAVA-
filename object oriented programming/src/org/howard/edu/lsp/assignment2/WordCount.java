@@ -12,7 +12,7 @@ public class WordCount {
     HashMap<String, Integer> wordCount = new HashMap<>();
 
     // Read the file
-    File file = new File("C:\\Users\\User\\git\\LSP_-MKJAVA-\\object oriented programming\\src\\main\\resources\\word count.txt");
+    File file = new File("C:\\Users\\User\\git\\LSP_-MKJAVA-\\object oriented programming\\src\\main\\java\\resources\\word.text");
     try (Scanner scanner = new Scanner(file)) {
       while (scanner.hasNextLine()) {
         String line = scanner.nextLine().toLowerCase();
