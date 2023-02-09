@@ -6,8 +6,8 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class FileReader {
-	public String readToString(String resource) throws FileNotFoundException {
-		URL url = getClass().getClassLoader().getResource(resource);
+	public String readToString(String resources) throws FileNotFoundException {
+		URL url = getClass().getClassLoader().getResource(resources);
 		
 		System.out.println(url.getPath());
 		
