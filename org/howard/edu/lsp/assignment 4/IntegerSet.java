@@ -17,3 +17,15 @@ public class IntegerSet  {
 	}
 
 	/**
+        * Clears the internal representation of the set
+         */
+        public void clear() {
+            set.clear();
+        }
+
+        /**
+         * Returns the length of the set
+         * @return 
+         */
+        public int length() { // returns the length
+ 
