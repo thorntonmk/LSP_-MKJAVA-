@@ -28,4 +28,15 @@ public class IntegerSet  {
          * @return 
          */
         public int length() { // returns the length
- 
+             return set.size();
+        }
+        /**
+         * Returns true if the 2 sets are equal, false otherwise;
+         * Two sets are equal if they contain all of the same values in ANY order.
+         * @param b
+         * @return 
+         */
+        public boolean equals(IntegerSet b) {
+            return set.equals(b);
+        } 
+  
