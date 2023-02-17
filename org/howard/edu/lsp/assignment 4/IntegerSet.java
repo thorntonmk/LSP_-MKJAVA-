@@ -50,4 +50,15 @@ public class IntegerSet  {
         /**
          * Returns the largest item in the set; Throws a IntegerSetException if the set is empty
          * @return
-         
+                * @throws IntegerSetException 
+         */
+        public int largest()  throws IntegerSetException{
+            if(set.isEmpty()){
+                throw new IntegerSetException();
+            }
+            int max = Integer.MIN_VALUE;
+            for(int i=0; i<set.size(); i++){
+                if(set.get(i) > max){
+                    max = set.get(i);
+                }
+ 
