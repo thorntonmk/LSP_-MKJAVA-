@@ -39,4 +39,15 @@ public class IntegerSet  {
         public boolean equals(IntegerSet b) {
             return set.equals(b);
         } 
-  
+          /**
+         * Returns true if the set contains the value, otherwise false
+         * @param value
+         * @return 
+         */
+        public boolean contains(int value) {
+            return set.contains(value);
+        }    
+        /**
+         * Returns the largest item in the set; Throws a IntegerSetException if the set is empty
+         * @return
+         
