@@ -73,4 +73,30 @@ public class IntegerSet  {
             if(set.isEmpty()){
                 throw new IntegerSetException();
             }
-    
+               int min = Integer.MAX_VALUE;
+            for(int i=0; i<set.size(); i++){
+                if(set.get(i) < min){
+                    min = set.get(i);
+                }
+            }
+            return min;
+        }
+
+	/**
+         * Adds an item to the set or does nothing it already there
+         * adds item to the set or does nothing if it is in set
+         * @param item 
+         */
+  	public void add(int item) {
+            if(!set.contains(item))
+                set.add(item);
+        }
+	/**
+         * Removes an item from the set or does nothing if not there
+         * @param item 
+         */
+        public void remove(int item) {
+            if(set.contains(item))
+                set.remove(item);
+        } 
+   
