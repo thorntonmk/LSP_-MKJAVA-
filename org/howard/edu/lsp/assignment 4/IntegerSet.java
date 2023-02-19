@@ -112,4 +112,15 @@ public class IntegerSet  {
          * list1.retainAll(list2) - is intersection
          * @param intSetb 
          */
-  
+         public void intersect(IntegerSet intSetb) {
+            set.retainAll(intSetb.set);
+        } 
+        /**
+         * Set difference, i.e., s1 –s2
+         * @param intSetb 
+         */
+        public void diff(IntegerSet intSetb) 
+        {
+            set.removeAll(intSetb.set);
+        }
+ 
