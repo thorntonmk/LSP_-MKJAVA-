@@ -50,3 +50,13 @@ public class Driver {
         set2.clear();
         set2.add(4);
         set2.add(5);
+     
+        System.out.println("Diff of Set1 and Set2");
+        System.out.println("Value of Set1 is:" + set1.toString());
+        System.out.println("Value of Set2 is:" + set2.toString());
+        set1.diff(set2);	// Diff of set1 and set2
+        System.out.println("Result of Diff of Set1 and Set2");
+        System.out.println(set1.toString());	// result of Diff of set1 and set2
+
+    }
+}
