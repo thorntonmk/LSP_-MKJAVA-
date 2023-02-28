@@ -69,3 +69,16 @@ public class IntegerSet  {
          * @return
          * @throws IntegerSetException 
          */
+        public int smallest()  throws IntegerSetException {
+            if(set.isEmpty()){
+                throw new IntegerSetException();
+            }
+            int min = Integer.MAX_VALUE;
+            for(int i=0; i<set.size(); i++){
+                if(set.get(i) < min){
+                    min = set.get(i);
+                }
+            }
+            return min;
+        }
+
