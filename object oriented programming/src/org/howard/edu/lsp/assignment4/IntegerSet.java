@@ -123,3 +123,20 @@ public class IntegerSet  {
         {
             set.removeAll(intSetb.set);
         }
+        /**
+         * Returns true if the set is empty, false otherwise
+         * @return 
+         */
+        boolean isEmpty(){
+            return set.isEmpty();
+        } 
+
+        /**
+         * Return String representation of your set
+         * @return 
+         */
+        @Override
+        public String toString() {	
+            return set.toString();
+        }
+}
