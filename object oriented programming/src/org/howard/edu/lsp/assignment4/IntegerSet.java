@@ -44,3 +44,15 @@ public class IntegerSet  {
          * @param value
          * @return 
          */
+       public boolean contains(int value) {
+            return set.contains(value);
+        }    
+        /**
+         * Returns the largest item in the set; Throws a IntegerSetException if the set is empty
+         * @return
+         * @throws IntegerSetException 
+         */
+        public int largest()  throws IntegerSetException{
+            if(set.isEmpty()){
+                throw new IntegerSetException();
+            }
