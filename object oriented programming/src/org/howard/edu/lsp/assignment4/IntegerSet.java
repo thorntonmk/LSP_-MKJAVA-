@@ -99,3 +99,27 @@ public class IntegerSet  {
             if(set.contains(item))
                 set.remove(item);
         } 
+       /**
+         * Set union: union will be removeAll and then addAll
+         * @param intSetb 
+         */
+        public void union(IntegerSet intSetb) {
+            set.removeAll(intSetb.set);
+            set.addAll(intSetb.set);
+        }
+        /**
+         * Set intersection: retains all the elements of set b.
+         * list1.retainAll(list2) - is intersection
+         * @param intSetb 
+         */
+      public void intersect(IntegerSet intSetb) {
+            set.retainAll(intSetb.set);
+        } 
+        /**
+         * Set difference, i.e., s1 –s2
+         * @param intSetb 
+         */
+        public void diff(IntegerSet intSetb) 
+        {
+            set.removeAll(intSetb.set);
+        }
