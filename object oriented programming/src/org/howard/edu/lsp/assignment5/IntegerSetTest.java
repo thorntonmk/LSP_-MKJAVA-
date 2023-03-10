@@ -113,4 +113,20 @@ public class IntegerSetTest {
         }catch(IntegerSetException e){
             System.err.println(e.getMessage());
         }
+        
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+        expResult = 3;
+        try{
+            result = instance.largest();
+            assertEquals(expResult, result);
+        }catch(IntegerSetException e){
+           System.err.println(e.getMessage());
+        }
+    }
+    
+    /**
+     * Test of smallest method, of class IntegerSet.
+     */
 
