@@ -49,3 +49,20 @@ public class IntegerSetTest {
         assertEquals(expResult, result);
     }
 
+  /**
+     * Test of equals method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for equals")
+    public void testEquals() {
+        // JUnit test case(s) for equals
+        System.out.println("equals");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+        
+        IntegerSet b = new IntegerSet();
+        b.add(1);
+        b.add(2);
+        b.add(3);
