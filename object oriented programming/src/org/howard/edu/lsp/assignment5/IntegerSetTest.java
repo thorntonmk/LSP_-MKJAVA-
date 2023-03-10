@@ -129,4 +129,18 @@ public class IntegerSetTest {
     /**
      * Test of smallest method, of class IntegerSet.
      */
+    @Test
+    @DisplayName("Test for smallest")
+    public void testSmallest(){
+        // JUnit test case(s) for smallest
+        System.out.println("smallest");
+        IntegerSet instance = new IntegerSet();
+        int expResult = 0;
+        int result = -1;
+        try{
+            result = instance.smallest();
+            assertEquals(expResult, result);
+        }catch(IntegerSetException e){
+            System.err.println(e.getMessage());
+        }
 
