@@ -95,4 +95,22 @@ public class IntegerSetTest {
         result = instance.contains(value);
         assertEquals(expResult, result);
     }
+   
+    /**
+     * Test of largest method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for largest")
+    public void testLargest() {
+        // JUnit test case(s) for largest
+        System.out.println("largest");
+        IntegerSet instance = new IntegerSet();
+        int expResult = 0;
+        int result = -1;
+        try{
+            result = instance.largest();
+            assertEquals(expResult, result);
+        }catch(IntegerSetException e){
+            System.err.println(e.getMessage());
+        }
 
