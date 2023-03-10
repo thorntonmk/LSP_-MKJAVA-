@@ -31,3 +31,21 @@ public class IntegerSetTest {
         instance.remove(1);
         assertTrue(instance.isEmpty());
     }
+
+    /**
+     * Test of length method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for length")
+    public void testLength() {
+        // JUnit test case(s) for length
+        System.out.println("length");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+        int expResult = 3;
+        int result = instance.length();
+        assertEquals(expResult, result);
+    }
+
