@@ -85,3 +85,14 @@ public class IntegerSetTest {
         instance.add(2);
         instance.add(3);
 
+        int value = 1;
+        boolean expResult = true;
+        boolean result = instance.contains(value);
+        assertEquals(expResult, result);
+        
+        value = 0;
+        expResult = false;
+        result = instance.contains(value);
+        assertEquals(expResult, result);
+    }
+
