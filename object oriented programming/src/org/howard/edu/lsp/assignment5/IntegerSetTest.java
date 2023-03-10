@@ -66,3 +66,22 @@ public class IntegerSetTest {
         b.add(1);
         b.add(2);
         b.add(3);
+
+        boolean expResult = true;
+        boolean result = instance.equals(b);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of equals method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for contains")
+    public void testContains() {
+        // JUnit test case(s) for contains
+        System.out.println("contains");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+
