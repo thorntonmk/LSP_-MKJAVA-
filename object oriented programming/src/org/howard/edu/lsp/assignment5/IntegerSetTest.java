@@ -188,4 +188,16 @@ public class IntegerSetTest {
         instance.add(1);
         instance.add(2);
         instance.add(3);
+        
+        instance.remove(2);
+        instance.remove(3);
+        
+        int expResult = 1;
+        int result = instance.length();
+        assertEquals(expResult, result);
+        
+        String strExpResult = "[1]";
+        String strResult = instance.toString();
+        assertEquals(strExpResult, strResult);
+    }
 
