@@ -213,4 +213,19 @@ public class IntegerSetTest {
         instance.add(1);
         instance.add(2);
         instance.add(3);
+        
+        IntegerSet instance2 = new IntegerSet();
+        instance2.add(3);
+        instance2.add(4);
+        
+        instance.union(instance2);
+        
+        int expResult = 4;
+        int result = instance.length();
+        assertEquals(expResult, result);
+        
+        String strExpResult = "[1, 2, 3, 4]";
+        String strResult = instance.toString();
+        assertEquals(strExpResult, strResult);
+    }
 
