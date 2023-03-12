@@ -155,4 +155,16 @@ public class IntegerSetTest {
             System.err.println(e.getMessage());
         }
     }
+        
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+        expResult = 1;
+        try{
+            result = instance.smallest();
+            assertEquals(expResult, result);
+        }catch(IntegerSetException e){
+            System.err.println(e.getMessage());
+        }
+    }
 
