@@ -228,4 +228,17 @@ public class IntegerSetTest {
         String strResult = instance.toString();
         assertEquals(strExpResult, strResult);
     }
+ 
+    /**
+     * Test of intersect method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for intersect")
+    public void testIntersect() {
+        // JUnit test case(s) for intersect
+        System.out.println("intersect");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
 
