@@ -200,4 +200,17 @@ public class IntegerSetTest {
         String strResult = instance.toString();
         assertEquals(strExpResult, strResult);
     }
+    
+    /**
+     * Test of union method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for union")
+    public void testUnion() {
+        // JUnit test case(s) for union
+        System.out.println("union");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
 
