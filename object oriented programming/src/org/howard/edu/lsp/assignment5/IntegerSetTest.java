@@ -175,4 +175,17 @@ public class IntegerSetTest {
         String strResult = instance.toString();
         assertEquals(strExpResult, strResult);
     }
+    
+    /**
+     * Test of remove method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for remove")
+    public void testRemove() {
+        // JUnit test case(s) for remove
+        System.out.println("remove");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
 
