@@ -257,4 +257,16 @@ public class IntegerSetTest {
         assertEquals(strExpResult, strResult);
     }
     
+   /**
+     * Test of diff method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for diff")
+    public void testDiff() {
+        // JUnit test case(s) for diff
+        System.out.println("diff");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
 
