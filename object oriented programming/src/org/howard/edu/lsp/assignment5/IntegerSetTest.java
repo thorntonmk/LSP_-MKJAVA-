@@ -156,3 +156,23 @@ public class IntegerSetTest {
         }
     }
 
+     /**
+     * Test of add method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for add")
+    public void testAdd() {
+        // JUnit test case(s) for add
+        System.out.println("add");
+        int item = 0;
+        IntegerSet instance = new IntegerSet();
+        instance.add(item);
+        int expResult = 1;
+        int result = instance.length();
+        assertEquals(expResult, result);
+        
+        String strExpResult = "[0]";
+        String strResult = instance.toString();
+        assertEquals(strExpResult, strResult);
+    }
+
