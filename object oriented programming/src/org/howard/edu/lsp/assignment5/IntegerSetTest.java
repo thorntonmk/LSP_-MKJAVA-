@@ -299,4 +299,23 @@ public class IntegerSetTest {
         instance.add(1);
         assertFalse(instance.isEmpty());
     }
+    
+    /**
+     * Test of diff method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for toString")
+    public void testToString() {
+        // JUnit test case(s) for toString
+        System.out.println("toString");
+        IntegerSet instance = new IntegerSet();
+        instance.add(1);
+        instance.add(2);
+        instance.add(3);
+        
+        String strExpResult = "[1, 2, 3]";
+        String strResult = instance.toString();
+        assertEquals(strExpResult, strResult);
+    }
+}
 
