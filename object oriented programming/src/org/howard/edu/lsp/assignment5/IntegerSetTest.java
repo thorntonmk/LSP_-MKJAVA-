@@ -284,4 +284,19 @@ public class IntegerSetTest {
         String strResult = instance.toString();
         assertEquals(strExpResult, strResult);
     }
+    
+    /**
+     * Test of isEmpty method, of class IntegerSet.
+     */
+    @Test
+    @DisplayName("Test for isEmpty")
+    public void testIsEmpty() {
+        // JUnit test case(s) for isEmpty
+        System.out.println("isEmpty");
+        IntegerSet instance = new IntegerSet();
+        assertTrue(instance.isEmpty());
+        
+        instance.add(1);
+        assertFalse(instance.isEmpty());
+    }
 
