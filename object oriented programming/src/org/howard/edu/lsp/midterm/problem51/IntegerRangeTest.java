@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment5;
+package org.howard.edu.lsp.midterm.problem51;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;

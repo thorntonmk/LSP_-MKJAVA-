@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment5;
+package org.howard.edu.lsp.midterm.problem51;
 
 /**
  * This class implements the functionality of Range A Range objects represents
