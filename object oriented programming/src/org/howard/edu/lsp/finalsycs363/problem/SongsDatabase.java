@@ -23,3 +23,21 @@ public class SongsDatabase {
         songsSet.add(songTitle);
         map.put(genre, songsSet);
     }
+
+  /* Return the Set that contains all songs for a genre */
+    public Set<String> getSongs(String genre) {
+        return map.get(genre);
+    }
+
+    /* Return genre, i.e., jazz, given a song title */
+    public String getGenreOfSong(String songTitle) {
+        String genre = "";
+        for (Map.Entry<String, HashSet<String>> set : map.entrySet()) {
+            Set<String> songsSet = set.getValue();
+            if(songsSet.contains(songTitle)){
+                genre = set.getKey();
+                break;
+            }
+        }
+        return genre;
+    }
