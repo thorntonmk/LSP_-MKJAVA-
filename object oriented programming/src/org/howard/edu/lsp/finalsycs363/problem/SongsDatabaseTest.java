@@ -79,3 +79,25 @@ public class SongsDatabaseTest {
 
     }
 
+   /**
+     * Test of getGenreOfSong method, of class SongsDatabase.
+     */
+    @Test
+    @DisplayName("Test for getGenreOfSong")
+    public void testGetGenreOfSong() {
+        System.out.println("getGenreOfSong");
+        SongsDatabase instance = new SongsDatabase();
+        instance.addSong("Rap", "Savage");
+        instance.addSong("Rap", "Gin and Juice");
+        instance.addSong("Jazz", "Always There");
+        
+        String expResult = "Rap";
+        String result = instance.getGenreOfSong("Savage");
+        assertEquals(expResult, result);
+        
+        expResult = "Jazz";
+        result = instance.getGenreOfSong("Always There");
+        assertEquals(expResult, result);
+
+    }
+
