@@ -41,3 +41,14 @@ public class SongsDatabase {
         }
         return genre;
     }
+    
+      public static void main(String[] args) {
+        SongsDatabase db = new SongsDatabase();
+        db.addSong("Rap", "Savage");
+        db.addSong("Rap", "Gin and Juice");
+        db.addSong("Jazz", "Always There");
+        Set<String> songs = db.getSongs("Rap"); // contains Savage and Gin and Juice
+        System.out.println( db.getGenreOfSong("Savage") );// prints "Rap"
+        System.out.println( db.getGenreOfSong("Always There") );// prints "Jazz"
+    }
+}
