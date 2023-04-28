@@ -36,3 +36,23 @@ public class SongsDatabaseTest {
     @AfterEach
     public void tearDown() {
     }
+
+ /**
+     * Test of addSong method, of class SongsDatabase.
+     */
+    @Test
+    @DisplayName("Test for addSong")
+    public void testAddSong() {
+        System.out.println("addSong");
+        SongsDatabase instance = new SongsDatabase();
+        instance.addSong("Rap", "Savage");
+        instance.addSong("Rap", "Gin and Juice");
+        instance.addSong("Jazz", "Always There");
+        Set<String> songs = instance.getSongs("Rap");
+        
+        String expResult = "Rap";
+        String result = instance.getGenreOfSong("Savage");
+        assertEquals(expResult, result);
+        
+    }
+
