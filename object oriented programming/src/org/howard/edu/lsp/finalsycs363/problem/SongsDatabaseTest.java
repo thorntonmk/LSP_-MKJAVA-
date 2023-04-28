@@ -56,3 +56,26 @@ public class SongsDatabaseTest {
         
     }
 
+  /**
+     * Test of getSongs method, of class SongsDatabase.
+     */
+    @Test
+    @DisplayName("Test for getSongs")
+    public void testGetSongs() {
+        System.out.println("getSongs");
+        SongsDatabase instance = new SongsDatabase();
+        instance.addSong("Rap", "Savage");
+        instance.addSong("Rap", "Gin and Juice");
+        instance.addSong("Jazz", "Always There");
+        Set<String> songs = instance.getSongs("Rap");
+        int expResult = 2;
+        int result = songs.size();
+        assertEquals(expResult, result);
+        
+        songs = instance.getSongs("Jazz");
+        expResult = 1;
+        result = songs.size();
+        assertEquals(expResult, result);
+
+    }
+
